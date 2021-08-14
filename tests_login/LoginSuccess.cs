@@ -4,20 +4,8 @@ using Microsoft.Playwright;
 
 namespace PlaywrightTests
 {
-    [Parallelizable(ParallelScope.Self)]
-    public class Tests
+    public class LoginSuccess
     {
-        [Test]
-        public async Task ShouldBeWhyPlaywright()
-        {
-            var playwright = await Playwright.CreateAsync();
-            await using var browser = await playwright.Chromium.LaunchAsync();
-            var page = await browser.NewPageAsync();
-            await page.GotoAsync("https://playwright.dev/dotnet/docs/why-playwright");
-            var content = await page.TitleAsync();
-            Assert.AreEqual(content, "Why Playwright? | Playwright .NET");
-        }
-
         [Test]
         public async Task ShouldLogIn(){
             var playwright = await Playwright.CreateAsync();
