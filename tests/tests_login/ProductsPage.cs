@@ -5,22 +5,29 @@ using Microsoft.Playwright;
 namespace PlaywrightTests
 {
     [Parallelizable(ParallelScope.Self)]
-    public class LoginFailure
+    public class ProductsPage
     {
         [Test]
         public async Task WrongPasswordShouldFailLogin()
         {
+
+            // Make sure to close, so that videos are saved.
             var playwright = await Playwright.CreateAsync();
             await using var browser = await playwright.Chromium.LaunchAsync();
+
+            var context = await browser.NewContextAsync(new BrowserNewContextOptions
+            {
+                RecordVideoDir = "/Users/mitch.mccoy/PlaywrightTests/test_recordings"
+            });
+
             var page = await browser.NewPageAsync();
             await page.GotoAsync("https://www.saucedemo.com/");
 
             await page.FillAsync("#user-name", "standard_user");
-            await page.FillAsync("#password", "wrong_password");
+            await page.FillAsync("#password", "secret_sauce");
             await page.ClickAsync("#login-button");
 
-            var error = await page.TextContentAsync("#login_button_container > div > form > div.error-message-container.error > h3");
-            Assert.AreEqual(error, "Epic sadface: Username and password do not match any user in this service");
+            await context.CloseAsync();
         }
 
         [Test]

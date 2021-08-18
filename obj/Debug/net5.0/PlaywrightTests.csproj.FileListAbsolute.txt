@@ -103,3 +103,4 @@
 /Users/mitch.mccoy/PlaywrightTests/obj/Debug/net5.0/ref/PlaywrightTests.dll
 /Users/mitch.mccoy/PlaywrightTests/obj/Debug/net5.0/PlaywrightTests.pdb
 /Users/mitch.mccoy/PlaywrightTests/obj/Debug/net5.0/PlaywrightTests.genruntimeconfig.cache
+/Users/mitch.mccoy/PlaywrightTests/bin/Debug/net5.0/Benchy.Framework.dll

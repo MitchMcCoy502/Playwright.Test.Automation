@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Benchy": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"

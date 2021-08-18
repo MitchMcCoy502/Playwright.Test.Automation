@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TZYlVDvYSIXGHTEhaDnbTEk40aEuF2FjZ/A7syao1R9S+Cqf2Pjo/0UFU9w94ofgtVakBqny+YsBJVnFHJswdg==",
+  "dgSpecHash": "29YWRWe2tQUNLetioB6PQpo9myPnEew0+AFp6yL69H80erwguPh4vX+wPMM0OeWj5dyrMkn6PidnLX1kRPEqWw==",
   "success": true,
   "projectFilePath": "/Users/mitch.mccoy/PlaywrightTests/PlaywrightTests.csproj",
   "expectedPackageFiles": [
+    "/Users/mitch.mccoy/.nuget/packages/benchy/1.0.0/benchy.1.0.0.nupkg.sha512",
     "/Users/mitch.mccoy/.nuget/packages/coverlet.collector/3.0.2/coverlet.collector.3.0.2.nupkg.sha512",
     "/Users/mitch.mccoy/.nuget/packages/macross.json.extensions/2.0.0/macross.json.extensions.2.0.0.nupkg.sha512",
     "/Users/mitch.mccoy/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
@@ -76,5 +77,16 @@
     "/Users/mitch.mccoy/.nuget/packages/system.xml.xpath/4.3.0/system.xml.xpath.4.3.0.nupkg.sha512",
     "/Users/mitch.mccoy/.nuget/packages/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Benchy 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Benchy",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

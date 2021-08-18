@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "PlaywrightTests/1.0.0": {
         "dependencies": {
+          "Benchy": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "Microsoft.Playwright.NUnit": "1.13.0",
           "NUnit": "3.13.1",
@@ -16,6 +17,14 @@
         },
         "runtime": {
           "PlaywrightTests.dll": {}
+        }
+      },
+      "Benchy/1.0.0": {
+        "runtime": {
+          "lib/Benchy.Framework.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "coverlet.collector/3.0.2": {},
@@ -933,6 +942,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Benchy/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rq5J76bd3qF2m11e02pw7wrayfoQfVVfyT+3c3HK5JjBvX9Dod4uAw+RbcbchLkKe8IssTh7S5E+YDyudFWZlA==",
+      "path": "benchy/1.0.0",
+      "hashPath": "benchy.1.0.0.nupkg.sha512"
     },
     "coverlet.collector/3.0.2": {
       "type": "package",

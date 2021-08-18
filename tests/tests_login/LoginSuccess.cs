@@ -7,7 +7,7 @@ namespace PlaywrightTests
     public class LoginSuccess
     {
         [Test]
-        public async Task ShouldLogIn(){
+        public async Task ShouldLogInToProductsPage(){
             var playwright = await Playwright.CreateAsync();
             await using var browser = await playwright.Chromium.LaunchAsync();
             var page = await browser.NewPageAsync();

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Benchy/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Benchy.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/Benchy.Framework.dll": {}
+        }
+      },
       "coverlet.collector/3.0.2": {
         "type": "package",
         "build": {
@@ -1329,6 +1338,20 @@
     }
   },
   "libraries": {
+    "Benchy/1.0.0": {
+      "sha512": "Rq5J76bd3qF2m11e02pw7wrayfoQfVVfyT+3c3HK5JjBvX9Dod4uAw+RbcbchLkKe8IssTh7S5E+YDyudFWZlA==",
+      "type": "package",
+      "path": "benchy/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "benchy.1.0.0.nupkg.sha512",
+        "benchy.nuspec",
+        "content/Benchy.Results.zip",
+        "content/Benchy.exe",
+        "lib/Benchy.Framework.dll"
+      ]
+    },
     "coverlet.collector/3.0.2": {
       "sha512": "iBvPAIDaI7j/iMx/DzCGCJ3rdiOmel9VINEfaTiBv/NKIGHOP4X3hqc6Q1wgMtArEshlhXexQknP17SK4vXb1w==",
       "type": "package",
@@ -5840,6 +5863,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Benchy >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Microsoft.Playwright.NUnit >= 1.13.0",
       "NUnit >= 3.13.1",
@@ -5884,6 +5908,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Benchy": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.9.4, )"
@@ -5923,5 +5951,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Benchy 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Benchy",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
