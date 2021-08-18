@@ -119,6 +119,9 @@ namespace PlaywrightTests
 
             await context.Tracing.StopAsync(new TracingStopOptions
             {
+                //TODO: You will need to change this to your path
+                //run this command when you get done running the tests for the first time
+                //playwright show-trace {PATHBELOW}/trace.zip
                 Path = "/Users/mitch.mccoy/PlaywrightTests/tests/tests_login/trace.zip"
             });
         }
